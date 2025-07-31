@@ -16,10 +16,11 @@ console.log(5 + 3)
 //let num1 = Number(prompt('Dame num 1'))
 //let num2 = Number(prompt('Dame num 2'))
 
-//let resultado = num2 + num2
+//let resultado = num2 + num
+// 2
 //alert("El resultado de tu suma es" + resultado)
 
-//Ejercicios con javascript
+/*//Ejercicios con javascript
 
 
 // Solicitar valores al usuario
@@ -38,3 +39,7 @@ alert("La suma de (" + a + ") + (" + b + ") = (" + (a + b) + ")");
 alert("La resta de (" + a + ") - (" + b + ") = (" + (a - b) + ")");
 alert("La multiplicación de (" + a + ") * (" + b + ") = (" + (a * b) + ")");
 alert("La división de (" + a + ") / (" + b + ") = (" + (a / b) + ")");
+
+*/
+
+console.log(`Tu numero es ${ValorA}`)
