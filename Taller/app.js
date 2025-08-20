@@ -241,3 +241,11 @@
 //         alert("Incorrecto, intenta con otros números.");
 //     }
 // }
+// // Ejercicio extra
+// let frutas = ["Manzana", "Plátano", "Fresa", "Naranja", "Mango", "Pera", "Piña", "Guayaba"];
+// document.write("Lista de frutas:<br>");
+// for (let i = 0; i < frutas.length; i++) {
+//   document.wri
+// te(`${i + 1}. ${frutas[i]}<br>`);
+// }
+//Yurany Cardenas y Juan Jose Quintero
