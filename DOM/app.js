@@ -1,33 +1,26 @@
-// Seleccionar los elementos con los que va a interactura o los que responden a la interacción
+const formulario = document.querySelector(".form")
+const inputNombre = document.querySelector(".inputNombre")
+const listaColores = document.querySelector("#color")
+const userPage = document.querySelector(".userPage")
+const imgEquipo = document.querySelector(".img-equipo")
+const textSaludo = document.querySelector(".text-saludo")
+const textEquipo = document.querySelector(".text-equipo")
 
-const pantalla = document.querySelector (".pantalla")
-const btnMenos = document.querySelector (".btn-menos")
-const btnMas = document.querySelector (".btn-mas")
+const enviarData = (e) => {
+  const equipo = document.querySelector('input[name="equipo"]:checked')
 
-// 2. Crear la FUNCIÓN
-let counter = 0
-
-function incrementar () {
-    counter++
-    pantalla.textContent = counter
-
-    if (counter >= 10){
-        pantalla.style.color = "red"
-    }
+  e.preventDefault() 
+  const userInfo = {
+    nombre: inputNombre.value,
+    color: listaColores.value,
+    equipo: equipo.value
+  }
+  console.log(userInfo)
+  document.body.style.background = userInfo.color
+  userPage.style.display = "block"
+  formulario.style.display = "none"
+  //
+  //
 }
 
-
-function decrementar () {
-    counter--
-    pantalla.textContent = counter
-
-    if (counter < 10){
-        pantalla.style.color = "black"
-    }
-}
-
-
-// 3. Crear el evento
-
-btnMas.addEventListener("click", incrementar) /*Aquí ponemos las funciones que queremos que haga, dará click y va a empezar a incrementar*/
-btnMenos.addEventListener("click", decrementar) /*Aquí ponemos las funciones que queremos que haga, dará click y va a empezar a incrementar*/
+formulario.addEventListener("submit",enviarData)
